@@ -1,16 +1,10 @@
 # NFT Collection Deployment and Transfer 
-## >> Important Update << 
-### 🔴 ETH Goerli Network Shutdown (April 2024)
-### 🔴 Polygon Mumbai Shutdown (April 2024)
-### 🔴 This Project Wont Work until FxRoot Supports in Sepolia and Amoy Testnets 
-> Goerli to Mumbai Bridge
+
+> Sepolia to Amoy Bridge
 
 > Can Be Bridged between ETHERIUM and POLYGON Blockchain
 
 > Used ERC721A for less Gas consumption
-
-[<img src="https://img.youtube.com/vi/AWMgQggm5CI/maxresdefault.jpg" width="600" height="300"
-/>](https://www.youtube.com/embed/AWMgQggm5CI)
 
 ## Description
 
@@ -22,20 +16,20 @@ This project involves the deployment of a 5-item NFT collection using Bing AI-ge
 
 * Node.js and npm installed.
 * Hardhat Ethereum development environment set up.
-* Metamask Configured to Goerli Testnet
-* Test Goerli in Account in Testnet Network
+* Metamask Configured to Sepolia Testnet
+* Test Sepolia in Account in Testnet Network
 
 ### Installation
 
-1. Clone this repository: `git clone https://github.com/gautham2k3/POLY-MOD-1.git`
-2. Navigate to the project folder: `cd POLY-MOD-1`
+1. Clone this repository: `git clone https://github.com/SUNILCHOUDHARY5764/Polygon_Module1.git`
+2. Navigate to the project folder.
 3. Install dependencies: `npm install`
 ### Wallet Config
-- Network name : Goerli
-- New RPC URL : https://rpc.ankr.com/eth_goerli
+- Network name : Sepolia
+- New RPC URL : https://polygon-amoy.blockpi.network/v1/rpc/public
 - Chain ID : 5
 - Currency Symbo : ETH
-- Block Explorer URL : https://goerli.etherscan.io
+- Block Explorer URL : https://ethereum-sepolia-rpc.publicnode.com
 > Block Explorer URL is Optional
 ### Contract Name and Symbol
 
@@ -58,7 +52,7 @@ The `maxLimit` variable sets the maximum number of NFTs that can be minted withi
 ### Base URL for NFTs (IPFS Base URL)
 
 ```solidity
-string baseUrl = "https://gateway.pinata.cloud/ipfs/QmWN2HtXeiuUyexaySd1EA4pmDeKm3MgUsUDqQ8M5Hdcr4";
+string baseUrl = "https://bronze-wooden-aardvark-881.mypinata.cloud/ipfs/Qmf4MNSp6aJ3N1FPbLVms6vcsdjgUPJ9Wv71VT3qUs3RSn";
 ```
 
 The `baseUrl` variable defines the base URL for the NFTs' metadata. This URL will be combined with the token ID to form the complete URL for accessing each NFT's metadata stored on the IPFS platform.
@@ -66,7 +60,7 @@ The `baseUrl` variable defines the base URL for the NFTs' metadata. This URL wil
 ### Prompt Description
 
 ```solidity
-string public prompt = "A Scary Person Illustrative style  Potrait , Fire the Background ,Lokking in Fire ";
+string public prompt = "A Under-water world Portait, A Creative Futuristic World, A Majestic Peacock";
 ```
 > Prompt can be anything based your Intrest 
 
@@ -74,25 +68,25 @@ string public prompt = "A Scary Person Illustrative style  Potrait , Fire the Ba
 
 1. Create an `.env` file and set your Ethereum wallet private key.
 2. Configure Hardhat network settings in `hardhat.config.js`.
-3. Run the deployment script: `npx hardhat run scripts/DEPLOY.js --network goerli`
+3. Run the deployment script: `npx hardhat run scripts/DEPLOY.js --network sepolia`
 
 ### Batch Mint NFTs
 
 1. Edit the `MINT.js` script with required details.
-2. Run the script: `npx hardhat run scripts/MINT.js --network goerli`
+2. Run the script: `npx hardhat run scripts/MINT.js --network sepolia`
 
 ### Batch Transfer NFTs to Polygon Mumbai
 
 1. Set up FxPortal Bridge for Ethereum to Polygon transfer.
 2. Edit the `TransferTokens.js` script with necessary details.
-3. Run the script: `npx hardhat run scripts/TransferTokens.js --network goerli`
+3. Run the script: `npx hardhat run scripts/TransferTokens.js --network sepolia`
 
 ### Check Balance 
 1. Edit the `getBalance.js` script with required details.
-2. Run the script: `npx hardhat run scripts/getBalance.js --network mumbai`
+2. Run the script: `npx hardhat run scripts/getBalance.js --network amoy`
 ## Explorer Used
-- [Goerli Testnet Explorer](https://goerli.etherscan.io)
-- [Polygon PoS Chain Testnet Explorer](https://mumbai.polygonscan.com)
+- [Amoy Testnet Explorer](https://www.oklink.com/amoy)
+- [Sepolia PoS Chain Testnet Explorer](https://sepolia.etherscan.io)
 ## Authors
 
 - Sunil Kumar
