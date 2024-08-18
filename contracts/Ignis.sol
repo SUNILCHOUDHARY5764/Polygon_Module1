@@ -9,9 +9,9 @@ contract Ignis is ERC721A {
     uint256 public maxLimit = 5;
 
     string baseUrl =
-        "https://gateway.pinata.cloud/ipfs/QmWN2HtXeiuUyexaySd1EA4pmDeKm3MgUsUDqQ8M5Hdcr4";
+        "https://bronze-wooden-aardvark-881.mypinata.cloud/ipfs/Qmf4MNSp6aJ3N1FPbLVms6vcsdjgUPJ9Wv71VT3qUs3RSn";
 
-    string public prompt = "A Scary Person Illustrative style  Potrait , Fire the Background ,Lokking in Fire ";
+    string public prompt = "A Under-water world Portait, A Creative Futuristic World, A Majestic Peacock";
 
     constructor() ERC721A("Ignis", "IGS") {
         owner = msg.sender;
