@@ -20,10 +20,10 @@ async function main() {
 
   // Get ERC721A contract instance
   const NFT = await ethers.getContractFactory("Ignis");
-  const nft = await NFT.attach("0x028d6A7878e1b72175d0568e4B0B4D8C7016DaC0");
+  const nft = await NFT.attach("0xdE1aba93006475AE75Fbca3ef50f6523c5780855");
 
   // Get the FXRoot contract instance (FxChildTunnel contract on Ethereum FxChain)
-  const fxRootAddress = "0xF9bc4a80464E48369303196645e876c8C7D972de";
+  const fxRootAddress = "0x96E8567B08d70a8E609E349e674Ce45f6087927b";
   const fxRoot = await ethers.getContractAt(fxRootContractABI, fxRootAddress);
 
   // TokenIds to transfer 

@@ -18,7 +18,7 @@ async function main() {
   const signer = new ethers.Wallet(privateKey, provider);
 
   // The address of the deployed contract 
-  const contractAddress = "0x028d6A7878e1b72175d0568e4B0B4D8C7016DaC0";
+  const contractAddress = "0xdE1aba93006475AE75Fbca3ef50f6523c5780855";
 
   // Get the contract factory for the Ignis contract and attach it to the signer
   const OneNFT = await ethers.getContractFactory("Ignis", signer);
